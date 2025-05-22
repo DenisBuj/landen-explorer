@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landen Explorer</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🌍 Landen Explorer</h1>
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Zoek op land..." />
+
+        <select id="regionFilter">
+          <option value="">Alle regio's</option>
+          <option value="Africa">Afrika</option>
+          <option value="Americas">Amerika</option>
+          <option value="Asia">Azië</option>
+          <option value="Europe">Europa</option>
+          <option value="Oceania">Oceanië</option>
+        </select>
+
+        <select id="currencyFilter">
+          <option value="">Alle valuta</option>
+        </select>
+
+        <select id="sortFilter">
+          <option value="">Sorteer op...</option>
+          <option value="az">Alfabetisch A-Z</option>
+          <option value="za">Alfabetisch Z-A</option>
+          <option value="popLowHigh">Bevolking: Klein → Groot</option>
+          <option value="popHighLow">Bevolking: Groot → Klein</option>
+        </select>
+
+        <button id="favoritesButton">❤️ Mijn Landen</button>
+        <button id="darkModeToggle">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="country-container" class="country-grid"></div>
+      <div id="pagination"></div>
+    </main>
+    <link rel="stylesheet" href="/src/style.css" />
+<script type="module" src="/src/main.js"></script>
+
+    <script type="module" src="src/Main.js"></script>
+  </body>
+</html>

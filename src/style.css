@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6ec;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #e0cfc2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+#country-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.country-card {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.country-card:hover {
+  transform: scale(1.03);
+}
+
+.country-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.country-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #1d1d1d;
+  color: #eee;
+}
+body.dark .country-card {
+  background-color: #2b2b2b;
+  color: #eee;
+}
+body.dark header {
+  background-color: #3d3d3d;
+}
+body.dark input,
+body.dark select,
+body.dark button {
+  background-color: #555;
+  color: white;
+  border-color: #777;
+}
+
+#closeModal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  line-height: 1;
+  background: none;
+  border: none;
+}
+
+.flag-wrapper {
+  position: relative;
+}
+
+.flag-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.star {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  text-shadow: 0 0 3px white;
+}
+
+.star.active {
+  color: gold;
+} 
+
+.flag-wrapper {
+  position: relative;
+}
+
+.flag-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.star {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  text-shadow: 0 0 3px white;
+  user-select: none;
+}
+
+.star.active {
+  color: gold;
+}
+#pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+#pagination button {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: bold;
+}
+
+#pagination button:hover {
+  background-color: #ccc;
+}
+
+#pagination button.active {
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0)
+}
+
+.country-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.country-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.country-card:hover {
+  transform: scale(1.02);
+}
+body.dark .country-card {
+  background-color: #2b2b2b;
+  color: #eee;
+}
+.flag-wrapper img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+}
+.country-info {
+  padding: 1rem;
+}
+
+.country-info h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
